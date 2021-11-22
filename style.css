@@ -1,0 +1,179 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+  font-family: "Julius Sans One", sans-serif;
+  background-color: #2a292e;
+}
+
+.title {
+  margin: 60px auto;
+  text-align: center;
+  font-size: 16px;
+  color: #bbbbbb;
+  margin-bottom: 50px;
+  margin-top: 60px;
+}
+
+.container {
+  margin: -40px auto;
+  display: table;
+  width: 50%;
+  height: 580px;
+  text-align: center;
+}
+
+.drums {
+  margin: 0 auto;
+  display: inline-table;
+  align-items: center;
+  align-content: center;
+}
+
+.contains {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 50%;
+}
+
+.firstDrum {
+  width: 100px;
+  height: 100px;
+  background-color: #39383d;
+  border-radius: 50%;
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #bbbbbb;
+  border: 3px solid #252429;
+  box-shadow: 0 0 8px #bbbbbb;
+}
+
+.secondDrum {
+  width: 100px;
+  height: 100px;
+  background-color: #39383d;
+  border-radius: 50%;
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #bbbbbb;
+  border: 3px solid #252429;
+  box-shadow: 0 0 8px #bbbbbb;
+}
+
+.oneDrum {
+  padding: 20px;
+  background-color: #39383d;
+  height: 80px;
+  width: 80px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #bbbbbb;
+  border: 3px solid #252429;
+  box-shadow: 0 0 8px #bbbbbb;
+}
+
+.playing {
+  transform: scale(1.1);
+  box-shadow: 0 0px 20px #39383d;
+}
+
+.key {
+  transition: all 0.02s;
+}
+
+.key:hover {
+  cursor: pointer;
+}
+
+@media (width: 280px) {
+  .title {
+    margin-top: 25px;
+  }
+}
+
+@media (min-width: 320px) {
+  .title {
+    margin-top: 60px;
+  }
+  .container {
+    height: 400px;
+  }
+  .contains {
+    margin-top: 0;
+    margin: -5px auto;
+  }
+  .oneDrum {
+    padding: 20px;
+  }
+}
+
+@media (height: 568px) {
+  .title {
+    margin-top: 20px;
+  }
+  .container {
+    height: 400px;
+  }
+  .contains {
+    margin-top: 0;
+    margin: -5px auto;
+  }
+  .oneDrum {
+    padding: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .title {
+    margin: 40px auto;
+  }
+  .container {
+    margin: -40 auto;
+  }
+  .drums {
+    margin: 40px auto;
+  }
+  .firstDrum {
+    width: 150px;
+    height: 150px;
+  }
+  .secondDrum {
+    width: 150px;
+    height: 150px;
+  }
+  .oneDrum {
+    width: 170px;
+    height: 170px;
+  }
+}
+
+@media (min-width: 1024px) {
+  * {
+    margin: 2px;
+  }
+  .title {
+    margin: 65px auto;
+  }
+  .container {
+    margin: -65px auto;
+  }
+  .firstDrum {
+    width: 150px;
+    height: 150px;
+  }
+  .secondDrum {
+    width: 150px;
+    height: 150px;
+  }
+  .oneDrum {
+    width: 170px;
+    height: 170px;
+  }
+}

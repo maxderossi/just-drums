@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>(Just Drums)</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./img/jd.svg" type="image/x-icon" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap");
+    </style>
+  </head>
+  <body>
+    <h1 class="title">( JUST DRUMS )</h1>
+    <section class="container">
+      <div class="drums">
+        <!--TOP = CRASH & RIDE-->
+        <div class="contains">
+          <div class="firstDrum key" data-key="crash" data-num="67">
+            (C)rash
+          </div>
+          <div class="secondDrum key" data-key="ride" data-num="82">(R)ide</div>
+        </div>
+        <!--MID 1 = TOM-->
+        <div class="contains">
+          <div class="oneDrum key" data-key="tom" data-num="84">(T)om</div>
+        </div>
+        <!--MID 2 = HITHAT & SNARE-->
+        <div class="contains">
+          <div class="firstDrum key" data-key="hithat" data-num="72">
+            (H)ithat
+          </div>
+          <div class="secondDrum key" data-key="snare" data-num="83">
+            (S)nare
+          </div>
+        </div>
+        <!--BOTTOM = KICK-->
+        <div class="contains">
+          <div class="oneDrum key" data-key="kick" data-num="75">(K)ick</div>
+        </div>
+      </div>
+    </section>
+
+    <!--SOUNDS-->
+    <audio data-key="crash" data-num="67" src="sounds/crash.mp3"></audio>
+    <audio data-key="ride" data-num="82" src="sounds/ride.wav"></audio>
+    <audio data-key="tom" data-num="84" src="sounds/tom.wav"></audio>
+    <audio data-key="hithat" data-num="72" src="sounds/hihat.wav"></audio>
+    <audio data-key="snare" data-num="83" src="sounds/snare.mp3"></audio>
+    <audio data-key="kick" data-num="75" src="sounds/kick.wav"></audio>
+
+    <!--JAVASCRIPT-->
+    <script src="app.js"></script>
+  </body>
+</html>
